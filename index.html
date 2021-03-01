@@ -56,6 +56,6 @@ let numberFy = document.getElementById('numberFy');
 
 input.addEventListener('input', function(event) {
   mirror.innerText = event.target.value.split('').reverse().join('');
-  numberFy.innerText=event.target.value.split('').charCodeAt(6).join('+');
+  numberFy.innerText=Number(event.target.value)+Number(event.target.value);
 });
 </script>
